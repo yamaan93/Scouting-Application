@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Scouting app (multiplatform)", "Scouting app (multiplatform)\Scouting app (multiplatform)\Scouting app (multiplatform).shproj", "{A54D53EA-9CE8-40F2-924F-6DD37FBADA33}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6127D95B-F362-467C-B087-1FF89BFF5D2B}
+	EndGlobalSection
+EndGlobal
