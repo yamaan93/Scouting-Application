@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Scouting application2</string>
     <string name="start_match">Tap To start new match</string>
+    <string name="auto">Auto line crossed</string>
+    <string name="Auto_quest_1">Cube on switch</string>
+    <string name="Auto_Quest_2">Cube on scale</string>
 </resources>
