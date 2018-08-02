@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onButtonTap(View v){
+        // starts new scouting match 
         setContentView(R.layout.auto);
     }
     public void autoline(View v){
