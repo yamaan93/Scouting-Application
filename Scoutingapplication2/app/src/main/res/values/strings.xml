@@ -5,4 +5,5 @@
     <string name="Auto_quest_1">Cube on switch</string>
     <string name="Auto_Quest_2">Cube on scale</string>
     <string name="team">Insert team number here (no spaces please)</string>
+    <string name="teleop">teleop</string>
 </resources>

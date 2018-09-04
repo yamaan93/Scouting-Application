@@ -29,8 +29,16 @@ public class MainActivity extends AppCompatActivity {
     public void autoline(View v){
 
     }
-    public void lowGoal(View v){
-
+    public int lowGoal(View v,String direc){
+        int count = 0 ;
+        direc = v.getTag().toString();
+        if(direc == "+"){
+            count++;
+        }
+        else if (direc =="-"){
+            count--;
+        }
+        return count;
     }
     public void highGoal(View v){
 
