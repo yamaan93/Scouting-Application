@@ -7,7 +7,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+
 public class MainActivity extends AppCompatActivity {
+    public int lowGoalAutocount =0;
     ArrayList Match_values =new ArrayList();//Creating arraylist.
     Boolean autoline,highGoal, lowGoal = false;
     @Override
@@ -29,16 +31,32 @@ public class MainActivity extends AppCompatActivity {
     public void autoline(View v){
 
     }
-    public int lowGoal(View v,String direc){
-        int count = 0 ;
-        direc = v.getTag().toString();
-        if(direc == "+"){
-            count++;
+    public void lowGoal(View v){
+        // ugly setup stuff
+        String direc;// find out if plus or minus button was pressed
+        direc = v.getTag().toString();//creates a string so you can check
+        TextView textView1;// not sure why this is nessesary
+        textView1  = (TextView)findViewById(R.id.lowGoalText);// gets textview of lowgoal text
+        String number = textView1.getText().toString();// pulls the number in the box incase someone typed in it rather than use the buttons
+        int newnumber =  Integer.parseInt(number);
+        if( newnumber >= 0){
+            lowGoalAutocount = newnumber;
         }
-        else if (direc =="-"){
-            count--;
+
+        if(direc.equals("+")){
+            lowGoalAutocount++;
+            //System.out.println(lowGoalAutocount);
         }
-        return count;
+        else if (direc.equals("-") && lowGoalAutocount> -1){
+            lowGoalAutocount--;
+            //System.out.println(lowGoalAutocount);
+        }
+        //sets the number in the text box
+
+
+        textView1.setText(""+lowGoalAutocount);
+        System.out.println(lowGoalAutocount);
+        //return lowGoalAutocount;
     }
     public void highGoal(View v){
 
