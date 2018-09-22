@@ -6,4 +6,6 @@
     <string name="Auto_Quest_2">Cube on scale</string>
     <string name="team">Insert team number here (no spaces please)</string>
     <string name="teleop">teleop</string>
+    <string name="submit">submit</string>
+
 </resources>
